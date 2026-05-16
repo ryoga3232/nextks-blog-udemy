@@ -10,7 +10,6 @@ import { getPostsData } from "@/lib/post";
 //SSGの場合
 export async function getStaticProps() {
   const allPostsData = getPostsData(); //id, title, date, thumbnail
-  console.log(allPostsData);
   return {
     props: {
       allPostsData,
@@ -27,7 +26,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyle.headingMd}>
-        <p>プロフィール</p>
+        <p>プロフィール2</p>
       </section>
 
       <section>
